@@ -1,3 +1,44 @@
+/* Police style */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Background color */
 body {
     background-color: #151515;
+}
+
+/* Main content position */
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Div in main under header */
+main>div {
+    padding: 80px 15px 0px 15px;
+}
+
+/* Style when the screen width is less than 768px (mobile) */
+@media screen and (max-width: 768px) {
+
+    /* all div position */
+    main>div {
+        padding: 60px 0px 0px 15px;
+    }
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    height: 0;
+    width: 5px;
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(250, 191, 83);
 }

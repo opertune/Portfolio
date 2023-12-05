@@ -79,6 +79,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 /* Parent Navbar height */
@@ -106,11 +107,17 @@ header {
 
 .nav>ul {
     padding: 0;
+    display: flex;
+    gap: 20px
 }
 
 /* Navbar li position & style */
 .nav-list {
     display: inline-block;
+    list-style: none;
+}
+
+.contact-list {
     list-style: none;
 }
 
@@ -122,9 +129,7 @@ header {
 .nav-list a {
     text-decoration: none;
     color: whitesmoke;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
-    padding-right: 10px;
 }
 
 .nav-list a:hover {
@@ -136,13 +141,82 @@ header {
     stroke: black;
 }
 
+/* href active */
+.active {
+    border-bottom: 3px solid;
+    border-color: white;
+    border-radius: 2px;
+}
+
 /* Responsive navbar */
-/* Style when the screen width is less than 600px */
-@media screen and (max-width: 800px) {}
+/* Style when the screen is less than 1024 px */
+@media screen and (max-width: 1024px) {
 
+    /* Contact-list position */
+    .contact-list {
+        margin-right: 50px;
+    }
+}
 
-/* Style when the screen width is more than 600px */
-@media screen and (min-width: 800px) {
+/* Style when the screen width is less than 768px (mobile)*/
+@media screen and (max-width: 768px) {
+
+    /* Reduce header & home button size */
+    header {
+        height: 60px;
+    }
+
+    .home-button>svg {
+        height: 60px;
+    }
+
+    /* Home button position */
+    .home-button {
+        margin-left: -25px;
+    }
+
+    /* Navbar position */
+    .nav {
+        position: absolute;
+        top: 59px;
+        width: 100%;
+    }
+
+    .nav>ul {
+        display: grid;
+        text-align: center;
+    }
+
+    /* Contact position */
+    .contact {
+        padding: 0;
+    }
+
+    .contact-list {
+        margin-right: 0;
+    }
+
+    /* Hide navbar */
+    .collapse {
+        max-height: 0;
+        overflow: hidden;
+        background-color: rgb(250, 191, 83);
+    }
+
+    /* Show/Hide navbar animation */
+    .show {
+        max-height: 100vh;
+        transition: max-height 2s ease-out;
+    }
+
+    .hide {
+        max-height: 0;
+        transition: max-height .5s ease-out;
+    }
+}
+
+/* Hide hamburger button when screen width is more than 769px (larger than mobile)*/
+@media screen and (min-width: 769px) {
 
     /* Hide hamburger button */
     .hamburger {
