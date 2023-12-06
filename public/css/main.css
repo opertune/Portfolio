@@ -20,7 +20,69 @@ main {
 
 /* Div in main under header */
 main>div {
-    padding: 80px 15px 0px 15px;
+    padding: 80px 15px 0px 0px;
+}
+
+/* Content */
+#about,
+#projects,
+#skills,
+#contact {
+    width: 100%;
+    color: white;
+}
+
+/* 
+#projects,
+#skills,
+#contact {
+    display: none;
+} */
+
+/* content style */
+.content {
+    font-size: x-large;
+}
+
+/* Link style */
+.content-link {
+    color: rgb(250, 191, 83);
+}
+
+.content-link:visited {
+    color: rgb(250, 191, 83);
+}
+
+/* Style when the screen with is more than 1024px (laptop) */
+@media screen and (min-width: 1024px) {
+
+    /* Content position and size */
+    .content {
+        padding-top: 8%;
+        display: flex;
+    }
+}
+
+/* Style when the screen width is more than 1200px */
+@media screen and (min-width: 1200px) {
+
+    /* Content position and size */
+    .content {
+        padding-top: 10%;
+    }
+}
+
+/* Class | Show and Hide about content */
+.content-show {
+    transform: translateX(0);
+}
+
+.content-hide-left {
+    transform: translateX(-150%);
+}
+
+.content-hide-right {
+    transform: translateX(150%);
 }
 
 /* Style when the screen width is less than 768px (mobile) */
@@ -28,7 +90,7 @@ main>div {
 
     /* all div position */
     main>div {
-        padding: 60px 0px 0px 15px;
+        padding: 60px 0px 0px 0px;
     }
 }
 

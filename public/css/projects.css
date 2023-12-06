@@ -1,0 +1,141 @@
+/* Projects */
+/* All projects in grid */
+#projects-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    width: 100%;
+    padding: 25px 0 25px 0;
+}
+
+/* grid item style */
+.grid-item {
+    display: inline-grid;
+    width: 30vh;
+    height: fit-content;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.grid-item:hover .modal-image-container {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.1s;
+}
+
+.grid-item:hover .bottom-frame {
+    cursor: pointer;
+}
+
+/* modal thumbnail style */
+.modal-image-container {
+    /* background-color: rgb(250, 191, 83); */
+    background-color: wheat;
+    /* background-color: whitesmoke; */
+    width: 30vh;
+    height: 25vh;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: 3px solid rgb(250, 191, 83);
+}
+
+.modal-image-container>img {
+    display: block;
+    margin: auto;
+    width: 25vh;
+    height: 25vh;
+}
+
+/* modal bottom frame style */
+.bottom-frame {
+    height: 7.7vh;
+    /* background-color: wheat; */
+    /* background-color: whitesmoke; */
+    /* background-color: rgb(250, 191, 83); */
+    background-color: #25252593;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* Modal bottom frame text style */
+.bottom-frame>p {
+    margin: 5px 0 0 5px;
+    line-height: 1;
+    font-size: 85%;
+}
+
+.bottom-frame-line {
+    width: 10vh;
+    height: 3px;
+    border-radius: 15px;
+    background: rgba(255, 0, 0, 0.767);
+    transition: width .4s ease-in-out;
+    margin: 5px 0 0 5px;
+}
+
+.grid-item:hover .bottom-frame-line {
+    width: 20vh;
+}
+
+
+
+/* Style when the screen width is less than 1124 px */
+@media screen and (max-width: 1124px) {
+
+    /* 3 columnds */
+    #projects-grid {
+        grid-template-columns: auto auto auto;
+    }
+
+    #grid-item {
+        margin: auto 100px auto 100px;
+    }
+
+    /* Title style */
+    .projects-title {
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+}
+
+/* Style when the screen width is less than 768px */
+@media screen and (max-width: 768px) {
+
+    /* 2 columns */
+    #projects-grid {
+        grid-template-columns: auto auto;
+        row-gap: 20px;
+    }
+
+    /* Modal bottom frame size */
+    .bottom-frame {
+        height: fit-content;
+    }
+
+    .bottom-frame>p {
+        padding-bottom: 10px;
+    }
+}
+
+/* Style when the screen width is less than 520px*/
+@media screen and (max-width: 520px) {
+
+    /* 1 column */
+    #projects-grid {
+        grid-template-columns: auto;
+    }
+}
+
+/* Style when the screen with is more than 1024px (laptop) */
+@media screen and (min-width: 1024px) {}
+
+/* Style when the screen width is less than 1024px */
+@media screen and (max-width: 1023px) {}
+
+/* Style when the screen width is more than 1200px */
+@media screen and (min-width: 1200px) {}
+
+
+/* PLACER GRID ITEM AU CENTRE QUAND >= 2 COLUMNS*/
+/* CHANGER TAILLE THUMBNAIL SELON LA TAILLE DE L'ÉCRAN */
+/* MODIFIER LES MODALS SELON LA TAILLE DE L'ÉCRAN */
