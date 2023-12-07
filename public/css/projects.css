@@ -4,8 +4,11 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     row-gap: 10px;
+    column-gap: 20px;
     width: 100%;
     padding: 25px 0 25px 0;
+    max-width: fit-content;
+    margin: auto;
 }
 
 /* grid item style */
@@ -13,7 +16,6 @@
     display: inline-grid;
     width: 30vh;
     height: fit-content;
-    margin: auto;
     border-radius: 10px;
 }
 
@@ -96,6 +98,15 @@
         margin: 20px 0 0 0;
         text-align: center;
     }
+
+    /* Modal bottom frame size */
+    .bottom-frame {
+        height: 12vh;
+    }
+
+    .bottom-frame>p {
+        padding-bottom: 10px;
+    }
 }
 
 /* Style when the screen width is less than 768px */
@@ -109,7 +120,7 @@
 
     /* Modal bottom frame size */
     .bottom-frame {
-        height: fit-content;
+        height: 12vh;
     }
 
     .bottom-frame>p {
@@ -127,15 +138,22 @@
 }
 
 /* Style when the screen with is more than 1024px (laptop) */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+    /* Title on top of projects grid */
+    #projects {
+        display: block;
+    }
+
+    /* Title style */
+    .projects-title {
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+}
 
 /* Style when the screen width is less than 1024px */
 @media screen and (max-width: 1023px) {}
 
 /* Style when the screen width is more than 1200px */
 @media screen and (min-width: 1200px) {}
-
-
-/* PLACER GRID ITEM AU CENTRE QUAND >= 2 COLUMNS*/
-/* CHANGER TAILLE THUMBNAIL SELON LA TAILLE DE L'ÉCRAN */
-/* MODIFIER LES MODALS SELON LA TAILLE DE L'ÉCRAN */

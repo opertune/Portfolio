@@ -84,8 +84,7 @@
 .modal-body>img,
 .modal-body>video {
     border-radius: 8px;
-    max-width: 90%;
-    width: 90%;
+    max-width: 70%;
     margin-bottom: 2vh;
 }
 
@@ -101,6 +100,22 @@
 
 .modal-arrow-go-top>a:hover {
     color: red;
+}
+
+.pacman-win,
+.pacman-lose {
+    width: 50%;
+}
+
+.spaceinvaders-home,
+.spaceinvaders-ig,
+.spaceinvaders-lose {
+    width: 50%;
+}
+
+.airedejava-home,
+.airedejava-result {
+    width: 50%;
 }
 
 @media screen and (max-width:996px) {

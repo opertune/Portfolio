@@ -58,19 +58,12 @@ main>div {
 
     /* Content position and size */
     .content {
-        padding-top: 8%;
         display: flex;
     }
 }
 
 /* Style when the screen width is more than 1200px */
-@media screen and (min-width: 1200px) {
-
-    /* Content position and size */
-    .content {
-        padding-top: 10%;
-    }
-}
+@media screen and (min-width: 1200px) {}
 
 /* Class | Show and Hide about content */
 .content-show {
