@@ -43,3 +43,8 @@ clickList.forEach(function (element) {
         }
     })
 });
+
+// Home button animation when the dom content is loaded
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.home-button')[0].style.transform = 'translateX(0)'
+})

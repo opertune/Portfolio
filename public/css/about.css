@@ -18,7 +18,7 @@
     }
 }
 
-/* Style when the screen with is more than 1024px (laptop) */
+/* Style when the screen width is more than 1024px (laptop) */
 @media screen and (min-width: 1024px) {
 
     /* About text hidden on the left */
@@ -27,6 +27,7 @@
         max-width: 40%;
         transition: transform 1s ease-in-out;
         transform: translateX(-150%);
+        margin-top: 40px;
     }
 
     /* About picture hidden on the right */

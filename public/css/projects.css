@@ -31,9 +31,7 @@
 
 /* modal thumbnail style */
 .modal-image-container {
-    /* background-color: rgb(250, 191, 83); */
     background-color: wheat;
-    /* background-color: whitesmoke; */
     width: 30vh;
     height: 25vh;
     border-top-left-radius: 6px;
@@ -51,9 +49,6 @@
 /* modal bottom frame style */
 .bottom-frame {
     height: 7.7vh;
-    /* background-color: wheat; */
-    /* background-color: whitesmoke; */
-    /* background-color: rgb(250, 191, 83); */
     background-color: #25252593;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -79,6 +74,16 @@
     width: 20vh;
 }
 
+/* Projects grid animations */
+.projects-grid-left {
+    transition: transform .8s ease-in-out;
+    transform: translateX(-650%);
+}
+
+.projects-grid-right {
+    transition: transform .8s ease-in-out;
+    transform: translateX(650%);
+}
 
 
 /* Style when the screen width is less than 1124 px */
@@ -157,7 +162,3 @@
 
 /* Style when the screen width is more than 1200px */
 @media screen and (min-width: 1200px) {}
-
-
-/* AJUSTER MODAL SUR MOBILE */
-/* ANIMATION MODAL QUAND LA PAGE SE CHARGE */

@@ -1,57 +1,40 @@
+/* Modal main style */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-    /* hashed background */
-    background: repeating-linear-gradient(-45deg,
-            #30303081,
-            #30303081 10px,
-            #27272781 10px,
-            #27272781 20px);
+    margin: 60px 0 0 0;
     opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.modal:hover {
-    cursor: pointer;
-}
-
+/* Modal content style */
 .modal-content {
     display: none;
-
+    position: relative;
     background-color: white;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    border-radius: 10px;
-
     opacity: 0;
     transition: opacity 1s;
+    height: 100%;
+    overflow-y: scroll;
+
+    height: calc(100% - 60px);
 }
 
-.modal-content:hover {
-    cursor: default;
-}
-
-.closeModal:hover {
-    cursor: pointer;
-}
-
+/* Modal header style */
 .modal-header {
     text-align: center;
 }
 
+/* Title */
 .modal-header>h1 {
     display: inline-block;
-    color: black;
+    font-size: x-large;
 }
 
+/* Close button style */
 .modal-header>span {
     position: absolute;
     font-size: 2.5em;
@@ -61,33 +44,30 @@
 
 .modal-header>span:hover {
     color: red;
+    cursor: pointer;
 }
 
+/* Modal body style */
 .modal-body {
-    height: min-content;
-    margin: 5px 15px 5px 15px;
+    padding: 5px 15px 5px 15px;
     text-align: center;
-
-    overflow: scroll;
-    max-height: 60vh;
 }
 
+/* Modal text style */
 .modal-body>p {
-    font-size: 1.5em;
-    width: 90%;
-    max-width: 90%;
-    display: block;
+    font-size: larger;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Image & Video style */
 .modal-body>img,
 .modal-body>video {
     border-radius: 8px;
-    max-width: 70%;
-    margin-bottom: 2vh;
+    max-width: 100%;
 }
 
+/* Arrow go top style */
 .modal-arrow-go-top {
     display: block;
 }
@@ -102,24 +82,45 @@
     color: red;
 }
 
-.pacman-win,
-.pacman-lose {
-    width: 50%;
-}
+/* Style when the screen width is more than 768px */
+@media screen and (min-width: 768px) {
 
-.spaceinvaders-home,
-.spaceinvaders-ig,
-.spaceinvaders-lose {
-    width: 50%;
-}
-
-.airedejava-home,
-.airedejava-result {
-    width: 50%;
-}
-
-@media screen and (max-width:996px) {
-    .modal-content {
+    /* Modal style */
+    .modal {
+        height: 100%;
         width: 100%;
+
+        /* hashed background */
+        background: repeating-linear-gradient(-45deg,
+                #30303081,
+                #30303081 10px,
+                #27272781 10px,
+                #27272781 20px);
+    }
+
+    .modal-content {
+        border-radius: 15px;
+        height: 70%;
+        width: 70%;
+
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Hide scrollbar */
+    .modal-content::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Style when the screen width is more than 1024px */
+@media screen and (min-width:1024px) {
+
+    /* Image & Video style */
+    .modal-body>img,
+    .modal-body>video {
+        max-width: 50%;
     }
 }

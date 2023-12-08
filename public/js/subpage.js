@@ -1,5 +1,9 @@
+// ABOUT SECTION
 const aboutText = document.querySelectorAll('.about-text')[0]
 const aboutPicture = document.querySelectorAll('.about-picture')[0]
+
+// PROJECT SECTION
+const gridItemAnimation = document.querySelectorAll('.grid-item')
 
 function showContent(element) {
     element.classList.add('content-show')
@@ -17,6 +21,11 @@ function hideContentRight(element) {
 document.addEventListener('DOMContentLoaded', function () {
     showContent(aboutText)
     showContent(aboutPicture)
+
+    // Show projects modal
+    gridItemAnimation.forEach(element => {
+        showContent(element)
+    });
 })
 
 // Switch content when user click on list items
