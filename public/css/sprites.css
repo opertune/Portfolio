@@ -70,6 +70,8 @@
 .spaceinvaders-home,
 .spaceinvaders-ig,
 .spaceinvaders-lose,
+.cryptographie,
+.inversion-matrice,
 .airedejava-home,
 .airedejava-sql,
 .airedejava-result,
@@ -78,7 +80,7 @@
 .todolist-1 {
     max-width: 100%;
     background-size: 100%;
-    background-image: url('/public/assets/projects/projectsImg.png');
+    background-image: url('/public/assets/projects/projects-img.png');
 }
 
 .cwm-home-page {
@@ -87,82 +89,92 @@
 }
 
 .mairie-panel-admin {
-    background-position: 0 5.838986%;
+    background-position: 0 5.539495%;
     background-size: 101.251647%;
 }
 
 .mairie-home-page {
-    background-position: 0 13.38014%;
+    background-position: 0 12.680608%;
     background-size: 107.332402%;
 }
 
 .cwm-wallet {
-    background-position: 0 22.544554%;
+    background-position: 0 21.380282%;
     background-size: 114.360119%;
 }
 
 .mairie-events {
-    background-position: 0 30.666931%;
+    background-position: 0 29.079616%;
     background-size: 121.214511%;
 }
 
 .mairie-contact {
-    background-position: 0 38.282316%;
+    background-position: 0 36.334197%;
     background-size: 133.420139%;
 }
 
 .threejs-train {
-    background-position: 0 44.29621%;
+    background-position: 0 42.059849%;
     background-size: 163.859275%;
 }
 
 .pacman-win {
-    background-position: 0 51.784458%;
+    background-position: 0 49.071163%;
     background-size: 176.059565%;
 }
 
 .pacman-lose {
-    background-position: 0 61.514481%;
+    background-position: 0 58.290452%;
     background-size: 176.463835%;
 }
 
 .spaceinvaders-home {
-    background-position: 0 68.997079%;
+    background-position: 0 65.489834%;
     background-size: 257.023411%;
 }
 
 .spaceinvaders-ig {
-    background-position: 0 75.236056%;
+    background-position: 0 71.412732%;
     background-size: 257.023411%;
 }
 
 .spaceinvaders-lose {
-    background-position: 0 81.505649%;
+    background-position: 0 77.361804%;
     background-size: 265%;
 }
 
+.cryptographie {
+    background-position: 0 80.338681%;
+    background-size: 273.001776%;
+}
+
+.inversion-matrice {
+    background-position: 0 82.97777%;
+    background-size: 273.001776%;
+}
+
 .airedejava-home {
-    background-position: 0 86.823348%;
+    background-position: 0 87.486279%;
     background-size: 276.438849%;
 }
 
 .airedejava-sql {
-    background-position: 0 88.330557%;
+    background-position: 0 88.895738%;
     background-size: 294.444444%;
 }
 
 .airedejava-result {
-    background-position: 0 93.031325%;
+    background-position: 0 93.382151%;
     background-size: 312.398374%;
 }
 
 .bot-discord {
-    background-position: 0 94.737821%;
+    background-position: 0 94.993809%;
     background-size: 354.965358%;
 }
 
 .todolist-2 {
-    background-position: 0 97.310261%;
+    background-position: 0 97.442547%;
     background-size: 492.628205%;
 }
 

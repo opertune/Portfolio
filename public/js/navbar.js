@@ -44,7 +44,16 @@ clickList.forEach(function (element) {
     })
 });
 
-// Home button animation when the dom content is loaded
+// Home button animation
+const homeButton = document.querySelectorAll('.home-button')[0]
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.home-button')[0].style.transform = 'translateX(0)'
+    homeButton.style.transform = 'translateX(0)'
+})
+
+homeButton.addEventListener('mouseover', function () {
+    homeButton.style.transform = 'rotateZ(90deg)'
+})
+
+homeButton.addEventListener('mouseout', function () {
+    homeButton.style.transform = 'rotateZ(0deg)'
 })

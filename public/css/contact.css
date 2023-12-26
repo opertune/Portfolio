@@ -1,0 +1,88 @@
+/* Hide captcha badge */
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+/* Contact form title */
+.contact-title {
+    font-size: x-large;
+    line-height: 1.2;
+    border-left: 2px solid rgb(250, 191, 83);
+    padding: 0 20px 0 10px;
+    width: 90%;
+    margin-left: 5%;
+    transition: transform .8s ease-in-out;
+    transform: translateX(-200%);
+}
+
+/* Email input, Message input & submit button style */
+#email,
+#message,
+#contactFormSubmit {
+    display: block;
+    margin: auto;
+    width: 90%;
+    border: solid 1px black;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    resize: none;
+    text-align: center;
+    font-size: smaller;
+
+    transition: transform .8s ease-in-out;
+    transform: translateX(-200%);
+}
+
+/* Message input box height */
+#message {
+    height: 30vh;
+    max-height: 60%;
+}
+
+/* Submit button & email input height */
+#contactFormSubmit,
+#email {
+    height: 30px;
+}
+
+/* Error & success message style */
+.error {
+    font-size: large;
+    color: red;
+    text-align: center;
+}
+
+.success {
+    font-size: large;
+    color: greenyellow;
+    text-align: center;
+}
+
+/* Style when the screen width is more than 768px */
+@media screen and (min-width: 768px) {
+    .error {
+        font-size: x-large;
+    }
+
+    .success {
+        font-size: x-large;
+    }
+}
+
+/* Style when the screen with is more than 1024px (laptop) */
+@media screen and (min-width: 1024px) {
+    #contact {
+        margin-top: 20px;
+    }
+
+    #contactForm {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-title {
+        margin-top: 40px;
+    }
+}

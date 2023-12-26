@@ -92,13 +92,9 @@ header {
 /* Home button position */
 .home-button {
     float: left;
-    transition: transform 1s ease-in-out;
+    transition: transform .7s ease-in-out;
 
     transform: translateX(-120vh);
-}
-
-.home-button:hover {
-    transform: rotateZ(90deg);
 }
 
 /* Navbar position */
@@ -208,7 +204,7 @@ header {
     /* Show/Hide navbar animation */
     .show {
         max-height: 100vh;
-        transition: max-height 2s ease-out;
+        transition: max-height 1s ease-out;
     }
 
     .hide {

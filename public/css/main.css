@@ -20,7 +20,7 @@ main {
 
 /* Div in main under header */
 main>div {
-    padding: 80px 15px 0px 0px;
+    padding: 60px 15px 0px 0px;
 }
 
 /* Content */
@@ -32,12 +32,12 @@ main>div {
     color: white;
 }
 
-/* 
+#about,
 #projects,
 #skills,
 #contact {
     display: none;
-} */
+}
 
 /* content style */
 .content {
@@ -53,6 +53,19 @@ main>div {
     color: rgb(250, 191, 83);
 }
 
+/* Class | Show and Hide about content */
+.content-show {
+    transform: translateX(0) !important;
+}
+
+.content-hide-left {
+    transform: translateX(-150vh) !important;
+}
+
+.content-hide-right {
+    transform: translateX(150vh) !important;
+}
+
 /* Style when the screen with is more than 1024px (laptop) */
 @media screen and (min-width: 1024px) {
 
@@ -60,22 +73,6 @@ main>div {
     .content {
         display: flex;
     }
-}
-
-/* Style when the screen width is more than 1200px */
-@media screen and (min-width: 1200px) {}
-
-/* Class | Show and Hide about content */
-.content-show {
-    transform: translateX(0);
-}
-
-.content-hide-left {
-    transform: translateX(-150%);
-}
-
-.content-hide-right {
-    transform: translateX(150%);
 }
 
 /* Style when the screen width is less than 768px (mobile) */

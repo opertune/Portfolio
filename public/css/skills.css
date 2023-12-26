@@ -1,0 +1,127 @@
+/* Title style */
+.skills-title {
+    margin: 0;
+    font-size: xx-large;
+
+    transition: transform .2s ease-in-out;
+    transform: translateX(-200vh);
+}
+
+/* Description */
+.skills-description {
+    line-height: 1.2;
+    border-left: 2px solid rgb(250, 191, 83);
+    padding: 0 20px 0 10px;
+
+    transition: transform .2s ease-in-out;
+    transform: translateX(-200vh);
+}
+
+/* List style */
+.languages-list {
+    max-width: 100%;
+    display: grid;
+    gap: 1rem;
+
+    list-style: none;
+    padding: 0;
+}
+
+.languages-list>li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 20px;
+
+    transition: transform .2s ease-in-out;
+    transform: translateX(-200vh);
+}
+
+/* Image size */
+.languages-list>li>img {
+    height: 75px;
+    width: 75px;
+}
+
+/* Progress bar style */
+.progressBackground {
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 5px;
+    width: 60%;
+    background-color: #353535;
+    max-width: 100%;
+}
+
+.progressBar {
+    display: block;
+    border-radius: 5px;
+    height: 100%;
+    transition: width 1s linear;
+}
+
+/* Style when the screen width is less than 768px */
+@media screen and (max-width: 768px) {
+    #skills {
+        padding-left: 15px;
+    }
+
+    .skills-description {
+        padding-right: 50px;
+    }
+}
+
+/* Style when the screen width is less than 1124 px */
+@media screen and (max-width: 1124px) {
+    .skills-title {
+        margin: 20px 0 0 0;
+    }
+}
+
+/* Style when the screen width is more than 768px */
+@media screen and (min-width: 768px) {
+    #skills {
+        margin-left: 20px;
+    }
+
+    /* Display skills in two columns */
+    .languages-list {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+/* Style when the screen with is more than 1024px (laptop) */
+@media screen and (min-width: 1024px) {
+    #skills {
+        display: block;
+        margin-top: 20px;
+    }
+
+    /* Display skills in two columns */
+    .languages-list {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    /* Skills description paddin */
+    .skills-description {
+        padding: 0 50px 0 10px;
+    }
+}
+
+/* Style when the screen with is more than 1200px */
+@media screen and (min-width: 1200px) {
+
+    .skills-title {
+        margin: 40px 0 0 0;
+    }
+
+    .skills-description {
+        max-width: 50%;
+    }
+
+    .languages-list {
+        grid-template-columns: repeat(4, 22%);
+    }
+}

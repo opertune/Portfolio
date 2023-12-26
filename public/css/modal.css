@@ -36,10 +36,11 @@
 
 /* Close button style */
 .modal-header>span {
-    position: absolute;
+    position: fixed;
     font-size: 2.5em;
     right: 0;
     margin: 0.2em 0.2em 0 0;
+    color: red;
 }
 
 .modal-header>span:hover {
@@ -100,8 +101,8 @@
 
     .modal-content {
         border-radius: 15px;
-        height: 70%;
-        width: 70%;
+        height: 85%;
+        width: 85%;
 
         position: absolute;
         top: 45%;
@@ -113,6 +114,11 @@
     .modal-content::-webkit-scrollbar {
         display: none;
     }
+
+    /* Modal body text size */
+    .modal-body>p {
+        font-size: x-large;
+    }
 }
 
 /* Style when the screen width is more than 1024px */
@@ -122,5 +128,11 @@
     .modal-body>img,
     .modal-body>video {
         max-width: 50%;
+    }
+
+    /* Modal content size */
+    .modal-content {
+        height: 75%;
+        width: 75%;
     }
 }

@@ -1,3 +1,7 @@
+#about {
+    text-align: center;
+}
+
 /* Paragraph style */
 .about-text>p {
     line-height: 1.2;
@@ -6,9 +10,24 @@
     padding-right: 20px;
 }
 
+.about-text {
+    text-align: left;
+    transition: transform 1s ease-in-out;
+    transform: translateX(-150vh);
+}
+
+.about-picture {
+    display: none;
+    transition: transform 1s ease-in-out;
+    transform: translateX(150vh);
+}
+
+.about-picture>img {
+    width: inherit;
+}
 
 /* Style when the screen width is less than 768px (mobile)*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .about-text {
         padding-right: 50px;
     }
@@ -18,55 +37,70 @@
     }
 }
 
-/* Style when the screen width is more than 1024px (laptop) */
-@media screen and (min-width: 1024px) {
-
-    /* About text hidden on the left */
-    .about-text {
-        padding-left: 4%;
-        max-width: 40%;
-        transition: transform 1s ease-in-out;
-        transform: translateX(-150%);
-        margin-top: 40px;
+@media screen and (min-width: 768px) {
+    #about {
+        margin-top: 10px;
+        padding-left: 15px;
     }
 
-    /* About picture hidden on the right */
+    /* Display text and image in the same line */
+    #about>div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .about-text {
+        max-width: 50%;
+    }
+
+    /* About picture size */
+    .about-picture {
+        max-width: 35vh;
+    }
+
+    .about-picture>img {
+        max-width: inherit;
+    }
+}
+
+/* Style when the screen width is more than 1024px (laptop) */
+@media screen and (min-width: 1024px) {
+    #about {
+        margin-top: 40px;
+
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+
+    /* About picture */
     .about-picture {
         margin: auto;
-        transition: transform 1s ease-in-out;
-        transform: translateX(150%);
+        max-width: 46vh;
     }
 
     /* About text position and style */
     .about-text>p {
-        padding-right: 10%;
+        /* padding-right: 10%; */
         padding-left: 20px;
         border-left-width: 3px;
-    }
-
-    /* About picture position and style */
-    .about-picture>img {
-        height: 50vb;
-    }
-}
-
-/* Style when the screen width is less than 1024px */
-@media screen and (max-width: 1023px) {
-    .about-picture {
-        display: none;
     }
 }
 
 /* Style when the screen width is more than 1200px */
 @media screen and (min-width: 1200px) {
-
-    /* About text padding */
-    .about-text {
-        padding-left: 10%;
+    #about {
+        margin-top: 60px;
     }
 
-    /* About picture padding */
+    /* About text */
+    .about-text {
+        max-width: 50vh;
+    }
+
+    /* About picture */
     .about-picture {
-        padding-right: 10%;
+        padding-left: 10%;
     }
 }

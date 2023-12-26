@@ -48,7 +48,8 @@
 
 /* modal bottom frame style */
 .bottom-frame {
-    height: 7.7vh;
+    min-height: 10vh;
+    max-height: 15vh;
     background-color: #25252593;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -56,7 +57,7 @@
 
 /* Modal bottom frame text style */
 .bottom-frame>p {
-    margin: 5px 0 0 5px;
+    margin: 5px 0 10px 5px;
     line-height: 1;
     font-size: 85%;
 }
@@ -77,21 +78,21 @@
 /* Projects grid animations */
 .projects-grid-left {
     transition: transform .8s ease-in-out;
-    transform: translateX(-650%);
+    transform: translateX(-150vh);
 }
 
 .projects-grid-right {
     transition: transform .8s ease-in-out;
-    transform: translateX(650%);
+    transform: translateX(150vh);
 }
 
 
 /* Style when the screen width is less than 1124 px */
 @media screen and (max-width: 1124px) {
 
-    /* 3 columnds */
+    /* 3 columns */
     #projects-grid {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
     }
 
     #grid-item {
@@ -103,15 +104,6 @@
         margin: 20px 0 0 0;
         text-align: center;
     }
-
-    /* Modal bottom frame size */
-    .bottom-frame {
-        height: 12vh;
-    }
-
-    .bottom-frame>p {
-        padding-bottom: 10px;
-    }
 }
 
 /* Style when the screen width is less than 768px */
@@ -122,15 +114,6 @@
         grid-template-columns: auto auto;
         row-gap: 20px;
     }
-
-    /* Modal bottom frame size */
-    .bottom-frame {
-        height: 12vh;
-    }
-
-    .bottom-frame>p {
-        padding-bottom: 10px;
-    }
 }
 
 /* Style when the screen width is less than 520px*/
@@ -139,6 +122,15 @@
     /* 1 column */
     #projects-grid {
         grid-template-columns: auto;
+    }
+}
+
+/* Style when the screen width is more than 768px */
+@media screen and (min-width: 768px) {
+
+    /* Text size under modal thumbnail */
+    .bottom-frame>p {
+        font-size: 100%;
     }
 }
 
@@ -157,8 +149,8 @@
     }
 }
 
-/* Style when the screen width is less than 1024px */
-@media screen and (max-width: 1023px) {}
-
-/* Style when the screen width is more than 1200px */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .projects-title {
+        margin-top: 40px;
+    }
+}
