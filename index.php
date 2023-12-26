@@ -529,5 +529,3 @@
 <script src="./public/js/modal.js" type="text/javascript"></script>
 
 </html>
-
-<!-- Refaire image/video de "Traduction d'algorithmes" -->
