@@ -154,7 +154,14 @@ function contact(bool) {
 
 // Show about content when the dom content is loaded
 document.addEventListener('DOMContentLoaded', function () {
-    about(true)
+    // Show contact form after submit
+    if (sessionStorage.getItem('contact')) {
+        about(false)
+        contact(true)
+        sessionStorage.clear()
+    } else {
+        about(true)
+    }
 })
 
 // Switch content when user click on list items

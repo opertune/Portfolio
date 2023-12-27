@@ -1,6 +1,13 @@
-/* Hide captcha badge */
+/* Captcha badge */
 .grecaptcha-badge {
-    visibility: hidden;
+    width: 70px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    right: 4px !important;
+}
+
+.grecaptcha-badge:hover {
+    width: 256px !important;
 }
 
 /* Contact form title */
@@ -12,6 +19,18 @@
     width: 90%;
     margin-left: 5%;
     transition: transform .8s ease-in-out;
+    transform: translateX(-200%);
+}
+
+/* Contact form title */
+.contact-title {
+    font-size: x-large;
+    line-height: 1.2;
+    border-left: 2px solid rgb(250, 191, 83);
+    padding: 0 20px 0 10px;
+    width: 90%;
+    margin-left: 5%;
+    transition: transform .8s linear;
     transform: translateX(-200%);
 }
 
@@ -30,7 +49,7 @@
     text-align: center;
     font-size: smaller;
 
-    transition: transform .8s ease-in-out;
+    transition: transform .8s linear;
     transform: translateX(-200%);
 }
 
@@ -44,6 +63,10 @@
 #contactFormSubmit,
 #email {
     height: 30px;
+}
+
+#contactFormSubmit:hover {
+    cursor: pointer;
 }
 
 /* Error & success message style */

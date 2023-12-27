@@ -12,13 +12,13 @@
 
 .about-text {
     text-align: left;
-    transition: transform 1s ease-in-out;
+    transition: transform .5s linear;
     transform: translateX(-150vh);
 }
 
 .about-picture {
     display: none;
-    transition: transform 1s ease-in-out;
+    transition: transform .5s linear;
     transform: translateX(150vh);
 }
 

@@ -3,7 +3,7 @@
     margin: 0;
     font-size: xx-large;
 
-    transition: transform .2s ease-in-out;
+    transition: transform .2s linear;
     transform: translateX(-200vh);
 }
 
@@ -13,7 +13,7 @@
     border-left: 2px solid rgb(250, 191, 83);
     padding: 0 20px 0 10px;
 
-    transition: transform .2s ease-in-out;
+    transition: transform .2s linear;
     transform: translateX(-200vh);
 }
 
@@ -33,7 +33,7 @@
     list-style: none;
     margin-bottom: 20px;
 
-    transition: transform .2s ease-in-out;
+    transition: transform .2s linear;
     transform: translateX(-200vh);
 }
 

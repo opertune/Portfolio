@@ -67,7 +67,7 @@
     height: 3px;
     border-radius: 15px;
     background: rgba(255, 0, 0, 0.767);
-    transition: width .4s ease-in-out;
+    transition: width .4s linear;
     margin: 5px 0 0 5px;
 }
 
@@ -77,12 +77,12 @@
 
 /* Projects grid animations */
 .projects-grid-left {
-    transition: transform .8s ease-in-out;
+    transition: transform .5s linear;
     transform: translateX(-150vh);
 }
 
 .projects-grid-right {
-    transition: transform .8s ease-in-out;
+    transition: transform .5s linear;
     transform: translateX(150vh);
 }
 

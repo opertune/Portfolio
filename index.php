@@ -25,6 +25,7 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         function onSubmit(token) {
+            sessionStorage.setItem('contact', 'submit');
             document.getElementById("contactForm").submit();
         }
     </script>
@@ -325,13 +326,13 @@
                             echo "<h3 class='success'>Message envoyé avec succès.</h3>";
                         }
                     } else {
-                        echo "<h3 class='error'>Les champs doivent être remplis</h3>";
+                        echo "<h3 class='error'>Les champs indiqués par une astérisque(*) sont obligatoires.</h3>";
                     }
                 }
                 ?>
                 <h3 class="contact-title">Vous pouvez me contact depuis le formulaire ci-dessous ou via mon profil <a href="https://www.linkedin.com/in/romain-baucheron/" class="content-link" target="_blank">linkedin</a></h3>
-                <input type="text" name="name" id="email" placeholder="Vôtre adresse email">
-                <textarea name="message" id="message" placeholder="Vôtre message"></textarea>
+                <input type="text" name="name" id="email" placeholder="Vôtre adresse email*">
+                <textarea name="message" id="message" placeholder="Vôtre message*"></textarea>
                 <input class="g-recaptcha" data-sitekey="6LeZO8IhAAAAAEPOZcXBugonLObS8kKSV-xfx6C2" data-callback='onSubmit' data-action='submit' type="submit" id="contactFormSubmit" name="contactFormButton" value="Envoyer">
             </form>
         </div>
